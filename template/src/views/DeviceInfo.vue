@@ -2,12 +2,12 @@
   <ion-page class='show-page'>
     <ion-header>
       <ion-toolbar>
-        <ion-title>{{headerTitle}}</ion-title>
+        <ion-title>\{{headerTitle}}</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class='content' padding>
-      <button v-on:click="getDeviceInfo()">Get Device Data</button>
-      <p> {{ info }}</p> 
+      <button v-on:click="getDeviceInfo()">Obter Informações</button>
+      <p>\{{ info }}</p> 
     </ion-content>
   </ion-page>
 </template>

@@ -2,7 +2,7 @@
   <ion-page class="show-page">
     <ion-header>
       <ion-toolbar>
-        <ion-title>{{headerTitle}}</ion-title>
+        <ion-title>\{{headerTitle}}</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="content" padding>
@@ -11,7 +11,7 @@
       <ion-list>
         <ion-item>
           <ion-label v-for="pokemon in listPokemon" :key="pokemon.id">
-            {{ pokemon.name }}
+            \{{ pokemon.name }}
           </ion-label>
         </ion-item>
       </ion-list>
