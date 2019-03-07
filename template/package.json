@@ -25,6 +25,14 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@capacitor/cli": "^1.0.0-beta.17",
+    "@capacitor/core": "^1.0.0-beta.17",
+    "@capacitor/android": "^1.0.0-beta.17",
+    "@capacitor/ios": "^1.0.0-beta.17",
+    {{#axios}}
+    "axios": "^0.18.0",
+    {{/axios}}
+    "vue-notifyjs": "^0.2.0",
     "vue": "^2.5.2"{{#router}},
     "vue-router": "^3.0.1"{{/router}}
   },

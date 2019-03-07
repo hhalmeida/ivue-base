@@ -1,0 +1,7 @@
+{
+    "appId": "io.ionicvue.app",
+    "appName": "{{ name }}",
+    "bundledWebRuntime": false,
+    "webDir": "www"
+  }
+  
