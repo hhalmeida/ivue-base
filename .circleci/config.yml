@@ -53,6 +53,26 @@ jobs:
       - run:
           name: Test build
           command: npm run build
+scenario_ionic:
+    <<: *vm_settings
+    environment:
+      - VUE_TEMPL_TEST: ionic
+    working_directory: ~/project/webpack-template/ionic
+    steps:
+      - attach_workspace:
+          at: '~/project/webpack-template'
+      - restore_cache:
+          key: template-cache-minimal-{{ checksum "package.json" }}
+      - run:
+          name: Install npm dependencies
+          command: npm install
+      - save_cache:
+          key: template-cache-minimal-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: Test build
+          command: npm run build
 
   scenario_full:
     <<: *vm_settings

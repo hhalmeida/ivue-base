@@ -69,6 +69,11 @@ module.exports = {
         },
       ],
     },
+    axios: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install axios?',
+    },
     router: {
       when: 'isNotTest',
       type: 'confirm',

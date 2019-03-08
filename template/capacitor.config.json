@@ -1,0 +1,7 @@
+{
+    "appId": "ga.ivue.app",
+    "appName": "{{ name }}",
+    "bundledWebRuntime": false,
+    "webDir": "www"
+  }
+  

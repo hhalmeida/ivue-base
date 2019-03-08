@@ -1,6 +1,10 @@
+.gradle
+/android/
+/ios/
 /build/
 /config/
 /dist/
+/www/
 /*.js
 {{#unit}}
 /test/unit/coverage/

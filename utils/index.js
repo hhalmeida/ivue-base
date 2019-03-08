@@ -77,8 +77,9 @@ To get started:
       data
     )}${lintMsg(data)}npm run dev`
   )}
-  
-Documentation can be found at https://vuejs-templates.github.io/webpack
+
+Documentation for use this template can be found at https://ivue-base.github.io/
+Documentation for how to create template can be found at https://vuejs-templates.github.io/webpack
 `
   console.log(message)
 }
