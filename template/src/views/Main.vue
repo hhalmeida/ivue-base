@@ -6,7 +6,7 @@
       </ion-toolbar>
     </ion-header>
     <ion-content class="content" padding>
-      <img src="./assets/ivue.png">
+      <img src="./assets/IVue.png">
       <h2>Lista Pokemon</h2>
       <ion-list>
         <ion-item>
