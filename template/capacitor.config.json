@@ -1,5 +1,5 @@
 {
-    "appId": "io.ionicvue.app",
+    "appId": "ga.ivue.app",
     "appName": "{{ name }}",
     "bundledWebRuntime": false,
     "webDir": "www"

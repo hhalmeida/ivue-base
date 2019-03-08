@@ -1,8 +1,10 @@
-# vue-webpack-boilerplate
+# iVue-boilerplate
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
+> This template is Vue 2.0 and Ionic 4 compatible.
+
+> This template use capacitor for build to mobiles iOS and Android.
 
 
 # Vue-cli 3 is here, so this template is now considered deprecated.
@@ -19,14 +21,18 @@ Feel free to fork this template if you want to keep it alive.
 
 - [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
 - [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
+- [For Ionic 4](http://vuejs.org/guide/): general information about how to work with Ionic
+- [For Example project Ionic + Vue](http://vuejs.org/guide/): Example about how to work and used.
 
 ## Usage
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It is recommended to use npm 3+ for a more efficient dependency tree.**
 
+**Steps to generate a new project based on the this template**
+
 ``` bash
 $ npm install -g vue-cli
-$ vue init webpack my-project
+$ vue init hhalmeida/ivue-base my-project
 $ cd my-project
 $ npm install
 $ npm run dev
@@ -35,7 +41,7 @@ $ npm run dev
 This will scaffold the project using the `master` branch. If you wish to use the latest version of the webpack template, do the following instead:
 
 ``` bash
-$ vue init webpack#develop my-project
+$ vue init hhalmeida/ivue-base#develop my-project
 ```
 
 :warning: **The develop branch is not considered stable and can contain bugs or not build at all, so use at your own risk.**
@@ -50,6 +56,7 @@ The development server will run on port 8080 by default. If that port is already
   - State preserving compilation error overlay
   - Lint-on-save with ESLint
   - Source maps
+  - libs of using max features of your mobile with Ionic and capacitor.
 
 - `npm run build`: Production ready build.
   - JavaScript minified with [UglifyJS v3](https://github.com/mishoo/UglifyJS2/tree/harmony).
