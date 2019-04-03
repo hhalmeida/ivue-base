@@ -2,69 +2,64 @@
 
 > {{ description }}
 
-## Config Vue
-``` bash
+NOTE :: For use push notifications in android, you need create app in firebase and download google-services.json and paste in android folder.
 
+## Install Dependencies
+``` bash
 # install dependencies
-cd {{ name }}
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
 ```
 
-## Build and run device  with Capacitor
-
-- Capacitor is already with the dependencies/libs installed in this project 
-``` bash
-npm install --save @capacitor/core @capacitor/cli
-```
-
-- Configure your package name.
-- For default we use "ga.ivue.app" 
-- You change manualy in capacitor.config.json
-```bash
-  npx cap init ionic-vue ga.hhalmeida.ionicvue
-```
-
-- If you update webpack, Change webpack config to build files in 'www' folder 
-
- ``` js
- build: {
-    // Template for index.htmlc
-    index: path.resolve(__dirname, '../www/index.html'),
- 
-    // Paths
-    assetsRoot: path.resolve(__dirname, '../www'), 
-    ...
-  }
- ``` 
-
- **You will run the projects according to the Technology and IDE you are using (Android Studio or xCode)**
-
-### Build 
+## Capacitor build device or emulator/simulator
+### Build and run device  with Capacitor
  - Android
-    ``` bash
-      npm run build
-      npx cap add android
-      npx cap sync
-      npx cap copy
-      npx cap open android
-    ```
+ ```bash
+    npx cap add android
+    npx cap sync
+    npm run build
+    npx cap copy
+    npx cap open android
+```
 
  - iOS
  - if you don't instaled cocoapods 
- - For this instalation you need Ruby in your system
  ``` bash
     gem install cocoapods
  ```
 
 ``` bash
-    npm run build
     npx cap add ios
     npx cap sync
+    npm run build
     npx cap copy
     npx cap open ios
+```
+## Build Setup
+
+``` bash
+# serve with hot reload at localhost:8080 for development 
+npm run dev
+
+# build to run in android device or emulator
+npm run build-android
+
+# build to run in ios device or emulator 
+npm run build-ios
+
+# build to run android and ios
+npm run build-native
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run all tests
+npm test
 ```
 
 ## References
@@ -82,4 +77,4 @@ https://capacitor.ionicframework.com/docs/getting-started/
 https://guides.cocoapods.org/using/getting-started.html#installation
 
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+For a detailed explanation on how things work, check out the [guide](http://hhalmeida.github.io/ivue-base/).

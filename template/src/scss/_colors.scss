@@ -1,0 +1,59 @@
+//  Colors 
+// 
+//  color base, for new colors
+// .ion-color-favorite {
+//   --ion-color-base: #69bb7b;
+//   --ion-color-base-rgb: 105,187,123;
+//   --ion-color-contrast: #ffffff;
+//   --ion-color-contrast-rgb: 255,255,255;
+//   --ion-color-shade: #5ca56c;
+//   --ion-color-tint: #78c288;
+// }
+
+// colors of media kit bene
+:host{
+  --green-light: #00b17b;
+  --green-light2: #00d296;
+  --dodger-blu: #56a5f8;
+  --grayish-brown: #464646;
+  --brownish-grey: #646464;
+  --warm-grey: #8c8c8c;
+  --greyish: #b4b4b4;
+  --white-one: #d2d2d2;
+  --white-two: #f0f0f0;
+  --white-three: #fafafa;
+  --Orange-yellow: #ffae00;
+  --deep-orange: #dd4f05;
+}
+
+.txt-black{color: black !important};
+.txt-white{color: white !important};
+.txt-red{color: red !important};
+.txt-bene{color: var(--bene) !important};
+
+.ion-color-vue {
+  --ion-color-base: #00b17b;
+  --ion-color-base-rgb: 0,177,123;
+  --ion-color-contrast: #ffffff;
+  --ion-color-contrast-rgb: 255,255,255;
+  --ion-color-shade: #009c6c;
+  --ion-color-tint: #1ab988;
+}
+
+.ion-color-orange-yellow {
+  --ion-color-base: #ffae00;
+  --ion-color-base-rgb: 255,174,0;
+  --ion-color-contrast: #000000;
+  --ion-color-contrast-rgb: 0,0,0;
+  --ion-color-shade: #e09900;
+  --ion-color-tint: #ffb61a;
+}
+
+.ion-color-deep-orange {
+  --ion-color-base: #dd4f05;
+  --ion-color-base-rgb: 221,79,5;
+  --ion-color-contrast: #ffffff;
+  --ion-color-contrast-rgb: 255,255,255;
+  --ion-color-shade: #c24604;
+  --ion-color-tint: #e0611e;
+}

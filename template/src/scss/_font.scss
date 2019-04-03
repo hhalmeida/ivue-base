@@ -1,0 +1,16 @@
+*{
+  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+/* Font Size Max 4px to 180px
+----------------------------------------*/
+$fs: font-size !default;
+@for $i from 4 through 180{
+  .#{fs}-#{$i}{
+    #{$fs}: #{$i}px !important;
+  }
+}
+
+
+.bold{ font-weight: bold !important}

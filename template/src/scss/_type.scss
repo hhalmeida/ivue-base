@@ -1,0 +1,31 @@
+/* GAPS
+----------------------------------------*/
+$horizontal-gaps: 'hgap' !default;
+$vertical-gaps: 'vgap' !default;
+@for $i from 5 through 180{
+  .#{$horizontal-gaps}-#{$i}{
+    width: 0px + $i !important;
+  }
+};
+@for $i from 5 through 180{
+  .#{$vertical-gaps}-#{$i}{
+    height: 0px + $i !important;
+  }
+};
+
+/* text alignemnt
+----------------------------------------*/
+.txt-right{text-align: right !important;}
+.txt-left{text-align: left !important;}
+.txt-center{text-align: center !important;}
+.txt-justify{text-align: justify !important;}
+
+/* Others
+----------------------------------------*/
+.no-click{ pointer-events:none;}
+.no-click > *{ pointer-events:all;}
+.no-margin{margin:0;}
+.no-style-list{ list-style:none; }
+.block{display: block !important;}
+.ellipsis{overflow:hidden!important; text-overflow:ellipsis!important;}
+.no-style-link{ text-decoration: none !important;}
