@@ -5,9 +5,7 @@
 import Vue from 'vue'
 import App from './App'
 import Ionic from '@ionic/vue'
-{{#router}}
 import router from './router'
-{{/router}}
 
 // Ionic core styles and theming
 import '@ionic/core/css/core.css'
@@ -46,9 +44,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  {{#router}}
   router,
-  {{/router}}
   {{#if_eq build "runtime"}}
   render: h => h(App)
   {{/if_eq}}

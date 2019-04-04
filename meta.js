@@ -45,6 +45,13 @@ module.exports = {
       required: true,
       message: 'Nick Project name, eg. kakaroto',
     },
+    packageName: {
+      when: 'isNotTest',
+      type: 'string',
+      required: true,
+      message: 'Your Package Name, eg. br.com.ivuebase',
+      default: 'io.app.project'
+    },
     description: {
       when: 'isNotTest',
       type: 'string',

@@ -1,6 +1,6 @@
 {
-    "appId": "ga.ivue.app",
-    "appName": "{{ name }}",
+    "appId": "{{ packageName }}",
+    "appName": "{{ realName }}",
     "bundledWebRuntime": false,
     "webDir": "www"
   }
