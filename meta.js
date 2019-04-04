@@ -64,6 +64,12 @@ module.exports = {
       type: 'string',
       message: 'Author',
     },
+    router: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install vue-router, Y, if you dont advanced user ',
+      default: 'Y'
+    },
     build: {
       when: 'isNotTest',
       type: 'list',
@@ -177,7 +183,7 @@ module.exports = {
     'test/unit/specs/index.js': "unit && runner === 'karma'",
     'test/unit/setup.js': "unit && runner === 'jest'",
     'test/e2e/**/*': 'e2e',
-    // 'src/router/**/*': 'router',
+    'src/router/**/*': 'router',
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
