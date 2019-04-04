@@ -5,6 +5,9 @@
 </template>
 
 <script>
+import { Plugins } from '@capacitor/core'
+const { Device, PushNotifications } = Plugins
+
 export default {
   name: 'App',
   data () {

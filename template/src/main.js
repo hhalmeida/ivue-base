@@ -20,9 +20,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Multiselect from 'vue-multiselect'
 import VueTheMask from 'vue-the-mask'
 
-// Libs
-import Multiselect from 'vue-multiselect'
-
 // Capacitor
 // import { Plugins } from '@capacitor/core'
 
