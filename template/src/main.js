@@ -22,9 +22,24 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Multiselect from 'vue-multiselect'
 import VueTheMask from 'vue-the-mask'
 
+// Libs
+import Multiselect from 'vue-multiselect'
+
 // Capacitor
-import { Plugins } from '@capacitor/core'
-const { SplashScreen } = Plugins
+// import { Plugins } from '@capacitor/core'
+
+library.add(faUserNinja, faUserSecret, faSearchLocation, faUserCircle, faKey, faFilePdf, faSignOutAlt, faArrowAltCircleRight, faSave)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+// register globally
+Vue.component('multiselect', Multiselect)
+Vue.component('vue-multiselect', window.VueMultiselect.default)
+
+Vue.config.productionTip = false
+Vue.config.ignoredElements = [/^ion-/]
+
+Vue.use(Ionic)
 
 Vue.config.productionTip = false
 

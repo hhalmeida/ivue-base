@@ -33,18 +33,24 @@ module.exports = {
   },
   
   prompts: {
+    realName: {
+      when: 'isNotTest',
+      type: 'string',
+      required: true,
+      message: 'Real Project name, eg. school-app ',
+    },
     name: {
       when: 'isNotTest',
       type: 'string',
       required: true,
-      message: 'Project name',
+      message: 'Nick Project name, eg. kakaroto',
     },
     description: {
       when: 'isNotTest',
       type: 'string',
       required: false,
       message: 'Project description',
-      default: 'A Vue.js project',
+      default: 'A IVue project',
     },
     author: {
       when: 'isNotTest',
@@ -68,16 +74,6 @@ module.exports = {
           short: 'runtime',
         },
       ],
-    },
-    axios: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Install axios?',
-    },
-    router: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Install vue-router?',
     },
     lint: {
       when: 'isNotTest',
