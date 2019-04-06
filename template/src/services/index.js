@@ -1,13 +1,12 @@
 import api from '@/helpers/api.js'
 
-export const users = () => {
-  getId = (id) => {
-    return api.get(`/users?id=${id}`).then(({data}) => { return data })
+// Examples of mount services for use how global.
+export default{
+  getPeople () {
+    return api.get('peoples');
   },
-  get = () => {
-    return api.get('/users')
-  },
-  post = (data) => {
-    return api.get('/user', data)
+  async getBurguer (opt) {
+    const { data } = await api.get('burguer')
+    return  data
   }
 }

@@ -12,9 +12,9 @@
       <slot />
     </ion-content>
     <ion-footer>
-      <div class="footer-text">Carefully crafted by</div>
-      <a href="https://labs.moduscreate.com" target="_blank">
-        <img src="@/images/modus-labs-logo.svg" class="modus-labs-logo" alt="Modus Labs Logo" />
+      <div class="footer-text">IVUE Base by</div>
+      <a href="" target="_blank">
+        <img src="" class="modus-labs-logo" alt="Modus Labs Logo" />
       </a>
     </ion-footer>
   </ion-page>

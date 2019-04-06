@@ -25,22 +25,8 @@ import VueTheMask from 'vue-the-mask'
 
 library.add(faUserNinja, faUserSecret, faSearchLocation, faUserCircle, faKey, faFilePdf, faSignOutAlt, faArrowAltCircleRight, faSave)
 
-Vue.component('font-awesome-icon', FontAwesomeIcon)
-
 // register globally
-Vue.component('multiselect', Multiselect)
-Vue.component('vue-multiselect', window.VueMultiselect.default)
-
-Vue.config.productionTip = false
-Vue.config.ignoredElements = [/^ion-/]
-
-Vue.use(Ionic)
-
-library.add(faUserNinja, faUserSecret, faSearchLocation, faUserCircle, faKey, faFilePdf, faSignOutAlt, faArrowAltCircleRight, faSave)
-
 Vue.component('font-awesome-icon', FontAwesomeIcon)
-
-// register globally
 Vue.component('multiselect', Multiselect)
 Vue.component('vue-multiselect', window.VueMultiselect.default)
 
